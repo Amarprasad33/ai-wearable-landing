@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Core — AI Wearable | Protect Your Attention",
+  title: "Core - Protect Your Attention",
   description:
     "World's first AI-wearable built to protect your attention. Shield your flow state and achieve in hours what takes others days.",
 };

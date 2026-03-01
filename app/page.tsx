@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background custom-scrollbar">
+    <main className="min-h-screen bg-background">
       <div className="relative">
         <div className="fixed w-full top-4 z-50">
           <Navbar />

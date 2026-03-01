@@ -58,7 +58,7 @@ export default function HeroSection() {
           <div className="flex items-center gap-4">
             {/* Primary Button - Gradient */}
             <button
-              className="flex items-center px-4 py-2 rounded-lg text-sm font-medium text-white transition-all duration-300 hover:shadow-lg hover:shadow-(--accent-blue)/25 active:scale-[0.98]"
+              className="flex items-center px-4 py-2 rounded-lg text-sm font-medium text-white transition-all duration-300 active:scale-[0.98] shadow-[inset_0px_2px_0px_0px_rgba(236,244,254,0.46)]"
               style={{
                 background:
                   "linear-gradient(135deg, var(--accent-blue), var(--accent-blue-light))",

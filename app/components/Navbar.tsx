@@ -34,7 +34,7 @@ export default function Navbar() {
 
       {/* CTA Button */}
       <button
-        className="flex items-center px-4 py-2 rounded-lg text-sm font-medium text-white transition-all duration-300 hover:shadow-lg hover:shadow-[var(--accent-blue)]/25 active:scale-[0.98]"
+        className="flex items-center px-4 py-2 rounded-lg text-sm font-medium text-white transition-all duration-300 hover:shadow-lg hover:shadow-(--accent-blue)/25 active:scale-[0.98]"
         style={{
           background:
             "linear-gradient(135deg, var(--accent-blue), var(--accent-blue-light))",

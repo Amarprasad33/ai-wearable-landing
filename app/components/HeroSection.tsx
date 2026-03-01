@@ -1,12 +1,13 @@
 "use client";
 
-import { MeshGradient } from "@paper-design/shaders-react";
+import { Dithering } from "@paper-design/shaders-react";
+// import { MeshGradient } from "@paper-design/shaders-react";
 import Image from "next/image";
 
 export default function HeroSection() {
   return (
     <section className="w-full relative flex justify-center h-full min-h-screen">
-      <MeshGradient
+      {/* <MeshGradient
         className="absolute inset-0 z-0 pointer-events-none w-full h-full"
         colors={["#9bb2e4", "#0d0d0d", "#2a4f7e", "#08050a"]}
         distortion={0.85}
@@ -16,6 +17,18 @@ export default function HeroSection() {
         speed={0.84}
         scale={0.84}
         rotation={88}
+      /> */}
+
+      <Dithering
+        className="absolute inset-0 z-0 pointer-events-none w-full h-full"
+        colorBack="#00000000"
+        colorFront="#26588c"
+        shape="swirl"
+        type="8x8"
+        size={1.6}
+        speed={1}
+        scale={4}
+        offsetX={0.4}
       />
       <div className="max-w-6xl w-full mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16 z-5 mt-28 lg:mt-0">
         {/* Left Content */}
@@ -45,7 +58,7 @@ export default function HeroSection() {
           <div className="flex items-center gap-4">
             {/* Primary Button - Gradient */}
             <button
-              className="flex items-center px-4 py-2 rounded-lg text-sm font-medium text-white transition-all duration-300 hover:shadow-lg hover:shadow-[var(--accent-blue)]/25 active:scale-[0.98]"
+              className="flex items-center px-4 py-2 rounded-lg text-sm font-medium text-white transition-all duration-300 hover:shadow-lg hover:shadow-(--accent-blue)/25 active:scale-[0.98]"
               style={{
                 background:
                   "linear-gradient(135deg, var(--accent-blue), var(--accent-blue-light))",

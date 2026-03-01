@@ -3,6 +3,7 @@
 import { Dithering } from "@paper-design/shaders-react";
 // import { MeshGradient } from "@paper-design/shaders-react";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 export default function HeroSection() {
   return (
@@ -34,28 +35,48 @@ export default function HeroSection() {
         {/* Left Content */}
         <div className="flex-1 flex flex-col items-start gap-4 lg:gap-6 max-w-xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+          <motion.div
+            initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm"
+          >
             <span className="w-2 h-2 rounded-full bg-accent-blue animate-pulse" />
             <span className="text-xs font-medium text-zinc-300">
               Join 5000+ hyper focused individuals
             </span>
-          </div>
+          </motion.div>
 
           {/* Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-[3.25rem] lg:text-5xl font-semibold leading-[1.15] text-medium tracking-tight text-white">
+          <motion.h1
+            initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.3, delay: 0.2 }}
+            className="text-4xl sm:text-5xl md:text-[3.25rem] lg:text-5xl font-semibold leading-[1.15] text-medium tracking-tight text-white"
+          >
             Silent the noise with <span className="text-accent-blue">Core</span>{" "}
             <br className="hidden sm:block" />
             Master your flow
-          </h1>
+          </motion.h1>
 
           {/* Subtext */}
-          <p className="text-sm md:text-base  leading-relaxed max-w-md text-zinc-300">
+          <motion.p
+            initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.3, delay: 0.4 }}
+            className="text-sm md:text-base  leading-relaxed max-w-md text-zinc-300"
+          >
             World&apos;s first AI-wearable built to protect your attention.
             Shield your flow state and achieve in hours what takes others days.
-          </p>
+          </motion.p>
 
           {/* CTA Buttons */}
-          <div className="flex items-center gap-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.3, delay: 0.6 }}
+            className="flex items-center gap-4"
+          >
             {/* Primary Button - Gradient */}
             <button
               className="flex items-center px-4 py-2 rounded-lg text-sm font-medium text-white transition-all duration-300 active:scale-[0.98] shadow-[inset_0px_2px_0px_0px_rgba(236,244,254,0.46)]"
@@ -71,7 +92,7 @@ export default function HeroSection() {
             <button className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-medium text-white border border-surface-border hover:border-zinc-700 bg-surface hover:bg-[#252528] hover:shadow-(--accent-blue)/25 transition-all duration-300 active:scale-[0.98]">
               Preorder Now
             </button>
-          </div>
+          </motion.div>
         </div>
 
         {/* Right Content - Product Image Card */}

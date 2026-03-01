@@ -1,16 +1,36 @@
 "use client";
 
+import { MeshGradient } from "@paper-design/shaders-react";
 import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="w-full relative flex justify-center min-h-[92vh] ">
-      <div className="max-w-6xl w-full mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16 z-5">
+    <section className="w-full relative flex justify-center h-full min-h-screen">
+      <MeshGradient
+        className="absolute inset-0 z-0 pointer-events-none w-full h-full"
+        colors={["#9bb2e4", "#0d0d0d", "#2a4f7e", "#08050a"]}
+        distortion={0.85}
+        swirl={0.42}
+        grainMixer={0}
+        grainOverlay={0}
+        speed={0.84}
+        scale={0.84}
+        rotation={88}
+      />
+      <div className="max-w-6xl w-full mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16 z-5 mt-28 lg:mt-0">
         {/* Left Content */}
         <div className="flex-1 flex flex-col items-start gap-4 lg:gap-6 max-w-xl">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+            <span className="w-2 h-2 rounded-full bg-accent-blue animate-pulse" />
+            <span className="text-xs font-medium text-zinc-300">
+              Join 5000+ hyper focused individuals
+            </span>
+          </div>
+
           {/* Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-[3.25rem] lg:text-5xl font-semibold leading-[1.15] tracking-tight text-white">
-            Silent the noise with <span className="text-accent-blue">core</span>{" "}
+          <h1 className="text-4xl sm:text-5xl md:text-[3.25rem] lg:text-5xl font-semibold leading-[1.15] text-medium tracking-tight text-white">
+            Silent the noise with <span className="text-accent-blue">Core</span>{" "}
             <br className="hidden sm:block" />
             Master your flow
           </h1>

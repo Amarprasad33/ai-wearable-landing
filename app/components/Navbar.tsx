@@ -1,20 +1,22 @@
 "use client";
 
+import Link from "next/link";
 import { CoreLogo } from "../icons";
 
 const navLinks = [
   { label: "Products", href: "#products" },
   { label: "About", href: "#about" },
   { label: "Resources", href: "#resources" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
   return (
-    <nav className="relative w-full max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 lg:px-16 py-4 z-5">
+    <nav className="relative w-full max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 lg:px-4 py-3 z-5 border border-white/10 rounded-xl bg-white/5 backdrop-blur-sm">
       {/* Logo */}
-      <a href="/" className="flex items-center" aria-label="Core home">
+      <Link href="/" className="flex items-center" aria-label="Core home">
         <CoreLogo className="w-8 h-8" />
-      </a>
+      </Link>
 
       {/* Nav Links - hidden on mobile */}
       <ul className="hidden md:flex items-center gap-8">

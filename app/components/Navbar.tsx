@@ -12,7 +12,7 @@ const navLinks = [
 
 export default function Navbar() {
   return (
-    <nav className="relative w-full max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 lg:px-4 py-3 z-5 border border-white/10 rounded-xl bg-white/5 backdrop-blur-sm">
+    <nav className="relative w-full max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 lg:px-4 py-3 z-5 border border-white/10 rounded-xl bg-black/5 backdrop-blur-sm">
       {/* Logo */}
       <Link href="/" className="flex items-center" aria-label="Core home">
         <CoreLogo className="w-8 h-8" />

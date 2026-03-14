@@ -2,6 +2,11 @@
 
 import { Brain, Eye, HeartPulse, Shield } from "lucide-react";
 import { motion } from "motion/react";
+import {
+  CoreFocusModes,
+  CoreRecovery,
+  CoreTracking,
+} from "./Features-illustrations";
 
 export default function FeatureSection() {
   return (
@@ -21,15 +26,15 @@ export default function FeatureSection() {
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: 0.2 }}
-            className="bg-[#0f0f11] border border-white/8 rounded-2xl p-8 flex flex-col"
+            className="bg-[#0f0f11] rounded-2xl p-8 flex flex-col justify-end"
           >
-            <Brain className="w-6 h-6 text-sky-400 mb-6" />
-            <h3 className="text-lg font-semibold text-white mb-3">
-              Real-Time Cognitive Tracking
+            <CoreTracking className="mb-9" />
+            <h3 className="text-lg font-semibold text-white mb-3 mt-3 text-center">
+              Core tracks your cognitive capacity in real time
             </h3>
-            <p className="text-sm text-zinc-400 leading-relaxed">
+            <p className="text-sm text-zinc-400 leading-relaxed text-center">
               Monitor brain activity patterns and cognitive load in real time
-              throughout your day.
+              throughout your day
             </p>
           </motion.div>
 
@@ -38,15 +43,15 @@ export default function FeatureSection() {
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: 0.4 }}
-            className="bg-[#0f0f11] border border-white/8 rounded-2xl p-8 flex flex-col"
+            className="bg-[#0f0f11] rounded-2xl p-8 flex flex-col justify-end"
           >
-            <Eye className="w-6 h-6 text-sky-400 mb-6" />
-            <h3 className="text-lg font-semibold text-white mb-3">
-              Adaptive Focus Modes
+            <CoreFocusModes className="w-[288px] mb-9" />
+            <h3 className="text-lg font-semibold text-white mb-3 text-center">
+              Get locked in with adaptive focus modes in core
             </h3>
-            <p className="text-sm text-zinc-400 leading-relaxed">
+            <p className="text-sm text-zinc-400 leading-relaxed text-center">
               Intelligent modes that adapt to your workflow, shielding you from
-              distractions.
+              distractions
             </p>
           </motion.div>
 
@@ -55,41 +60,16 @@ export default function FeatureSection() {
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, delay: 0.6 }}
-            className="bg-[#0f0f11] border border-white/8 rounded-2xl p-8 flex flex-col"
+            className="bg-[#0f0f11] rounded-2xl p-8 flex flex-col justify-end"
           >
-            <HeartPulse className="w-6 h-6 text-sky-400 mb-6" />
-            <h3 className="text-lg font-semibold text-white mb-3">
-              Neural Recovery Insights
+            <CoreRecovery className="mb-9" />
+            <h3 className="text-lg font-semibold text-white mb-3 text-center">
+              Report on neural recovery insights to get more done
             </h3>
-            <p className="text-sm text-zinc-400 leading-relaxed">
-              Track recovery cycles and optimize your rest for sustained peak
-              performance.
+            <p className="text-sm text-zinc-400 leading-relaxed text-center">
+              Track focus and recovery cycles to optimize for sustained
+              performance
             </p>
-          </motion.div>
-
-          {/* Bottom Row Card spanning 3 columns */}
-          <motion.div
-            initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
-            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.3, delay: 0.8 }}
-            className="md:col-span-3 bg-[#0f0f11] border border-white/8 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row"
-          >
-            <div className="flex-1 flex flex-col justify-center max-w-xl">
-              <Shield className="w-6 h-6 text-sky-400 mb-6" />
-              <h3 className="text-2xl font-semibold text-white mb-4">
-                Precision Titanium Build
-              </h3>
-              <p className="text-base text-zinc-400 leading-relaxed">
-                Crafted from aerospace-grade titanium. Featherweight.
-                Indestructible.
-              </p>
-            </div>
-
-            {/* The right side placeholder for the product image, left empty as requested */}
-            <div className="flex-1 relative min-h-[250px] md:min-h-[300px] w-full mt-8 md:mt-0 flex items-center justify-center">
-              {/* Product image goes here */}
-            </div>
           </motion.div>
         </div>
       </div>

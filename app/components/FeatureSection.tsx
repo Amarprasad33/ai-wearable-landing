@@ -15,9 +15,13 @@ export default function FeatureSection() {
       id="features"
     >
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-16 tracking-tight">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-4 tracking-tight">
           Engineered for Peak Cognition
         </h2>
+        <p className="text-base text-zinc-400 leading-relaxed text-center mb-16">
+          Real-time cognitive tracking and adaptive focus modes designed to
+          maximize how you think and work.
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Top Row Cards */}
@@ -28,7 +32,7 @@ export default function FeatureSection() {
             transition={{ duration: 0.3, delay: 0.2 }}
             className="bg-[#0f0f11] rounded-2xl p-8 flex flex-col justify-end"
           >
-            <CoreTracking className="mb-9" />
+            <CoreTracking className="w-full max-w-[270px] h-auto mb-9 mx-auto" />
             <h3 className="text-lg font-semibold text-white mb-3 mt-3 text-center">
               Core tracks your cognitive capacity in real time
             </h3>
@@ -45,7 +49,7 @@ export default function FeatureSection() {
             transition={{ duration: 0.3, delay: 0.4 }}
             className="bg-[#0f0f11] rounded-2xl p-8 flex flex-col justify-end"
           >
-            <CoreFocusModes className="w-[288px] mb-9" />
+            <CoreFocusModes className="w-full max-w-[288px] h-auto mb-9 mx-auto" />
             <h3 className="text-lg font-semibold text-white mb-3 text-center">
               Get locked in with adaptive focus modes in core
             </h3>
@@ -62,7 +66,7 @@ export default function FeatureSection() {
             transition={{ duration: 0.3, delay: 0.6 }}
             className="bg-[#0f0f11] rounded-2xl p-8 flex flex-col justify-end"
           >
-            <CoreRecovery className="mb-9" />
+            <CoreRecovery className="w-full max-w-[292px] h-auto mb-9 mx-auto" />
             <h3 className="text-lg font-semibold text-white mb-3 text-center">
               Report on neural recovery insights to get more done
             </h3>

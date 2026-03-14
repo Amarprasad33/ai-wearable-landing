@@ -2,8 +2,6 @@ import { SVGProps } from "react";
 
 export const CoreTracking = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    width="270"
-    height="260"
     viewBox="0 0 270 260"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -226,8 +224,6 @@ export const CoreTracking = (props: SVGProps<SVGSVGElement>) => (
 
 export const CoreFocusModes = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    width="332"
-    height="341"
     viewBox="0 0 332 341"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -483,8 +479,6 @@ export const CoreFocusModes = (props: SVGProps<SVGSVGElement>) => (
 
 export const CoreRecovery = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    width="292"
-    height="281"
     viewBox="0 0 292 281"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

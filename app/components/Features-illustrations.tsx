@@ -263,7 +263,7 @@ export const CoreTracking = (props: SVGProps<SVGSVGElement>) => (
           duration: 3,
           repeat: Infinity,
           ease: "linear",
-          repeatDelay: 1.5,
+          repeatDelay: 3,
         }}
         x1="113"
         y1="127"
@@ -271,11 +271,11 @@ export const CoreTracking = (props: SVGProps<SVGSVGElement>) => (
         y2="127.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-opacity="0" />
-        <stop offset="0.945535" stop-color="#BFBFBF" stop-opacity="0" />
-        <stop offset="0.959731" stop-color="#C9C9C9" />
-        <stop offset="0.976041" stop-color="#9F9F9F" stop-opacity="0" />
-        <stop offset="1" stop-color="#666666" stop-opacity="0" />
+        <stop stopOpacity="0" />
+        <stop offset="0.945535" stopColor="#BFBFBF" stopOpacity="0" />
+        <stop offset="0.959731" stopColor="#C9C9C9" />
+        <stop offset="0.976041" stopColor="#9F9F9F" stopOpacity="0" />
+        <stop offset="1" stopColor="#666666" stopOpacity="0" />
       </motion.linearGradient>
       <motion.linearGradient
         id="paint1_linear_108_169"
@@ -294,10 +294,10 @@ export const CoreTracking = (props: SVGProps<SVGSVGElement>) => (
         y2="214.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#414141" stop-opacity="0" />
-        <stop offset="0.0628846" stop-color="white" />
-        <stop offset="0.215385" stop-color="#666666" stop-opacity="0" />
-        <stop offset="1" stop-opacity="0" />
+        <stop stopColor="#414141" stopOpacity="0" />
+        <stop offset="0.0628846" stopColor="white" />
+        <stop offset="0.215385" stopColor="#666666" stopOpacity="0" />
+        <stop offset="1" stopOpacity="0" />
       </motion.linearGradient>
       <motion.linearGradient
         initial={{ x1: 233, y1: 125.5, x2: 183.5, y2: 125.5 }}
@@ -307,7 +307,7 @@ export const CoreTracking = (props: SVGProps<SVGSVGElement>) => (
           repeat: Infinity,
           ease: "linear",
           delay: 3.5,
-          repeatDelay: 3,
+          repeatDelay: 3.5,
         }}
         id="paint2_linear_108_169"
         x1="233"
@@ -316,10 +316,10 @@ export const CoreTracking = (props: SVGProps<SVGSVGElement>) => (
         y2="125.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-opacity="0" />
-        <stop offset="0.890311" stop-color="#414141" stop-opacity="0" />
-        <stop offset="0.949332" stop-color="white" />
-        <stop offset="1" stop-color="#666666" stop-opacity="0" />
+        <stop stopOpacity="0" />
+        <stop offset="0.890311" stopColor="#414141" stopOpacity="0" />
+        <stop offset="0.949332" stopColor="white" />
+        <stop offset="1" stopColor="#666666" stopOpacity="0" />
       </motion.linearGradient>
       <motion.linearGradient
         initial={{ x1: 146.5, y1: 45, x2: 146.5, y2: 94.5 }}
@@ -329,7 +329,7 @@ export const CoreTracking = (props: SVGProps<SVGSVGElement>) => (
           repeat: Infinity,
           ease: "linear",
           delay: 4,
-          repeatDelay: 3,
+          repeatDelay: 4,
         }}
         id="paint3_linear_108_169"
         x1="146.5"
@@ -338,10 +338,10 @@ export const CoreTracking = (props: SVGProps<SVGSVGElement>) => (
         y2="94.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-opacity="0" />
-        <stop offset="0.890311" stop-color="#414141" stop-opacity="0" />
-        <stop offset="0.949332" stop-color="white" />
-        <stop offset="1" stop-color="#666666" stop-opacity="0" />
+        <stop stopOpacity="0" />
+        <stop offset="0.890311" stopColor="#414141" stopOpacity="0" />
+        <stop offset="0.949332" stopColor="white" />
+        <stop offset="1" stopColor="#666666" stopOpacity="0" />
       </motion.linearGradient>
     </defs>
   </svg>
@@ -862,8 +862,8 @@ export const CoreRecovery = (props: SVGProps<SVGSVGElement>) => (
         y2="275.923"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#D9D9D9" />
-        <stop offset="1" stop-color="#737373" stop-opacity="0" />
+        <stop stopColor="#D9D9D9" />
+        <stop offset="1" stopColor="#737373" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_106_166"
@@ -873,8 +873,8 @@ export const CoreRecovery = (props: SVGProps<SVGSVGElement>) => (
         y2="275.923"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#D9D9D9" />
-        <stop offset="1" stop-color="#737373" stop-opacity="0" />
+        <stop stopColor="#D9D9D9" />
+        <stop offset="1" stopColor="#737373" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>

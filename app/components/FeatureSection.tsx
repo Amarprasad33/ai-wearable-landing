@@ -49,7 +49,60 @@ export default function FeatureSection() {
             transition={{ duration: 0.3, delay: 0.4 }}
             className="bg-[#0f0f11] rounded-2xl p-8 flex flex-col justify-end"
           >
-            <CoreFocusModes className="w-full max-w-[288px] h-auto mb-9 mx-auto" />
+            <div className="w-full aspect-square mb-9 mx-auto relative flex items-center justify-center overflow-hidden rounded-xl ">
+              <motion.div
+                animate={{
+                  scale: [1, 1.1, 1],
+                  opacity: [0.3, 0.4, 0.3],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="absolute size-48 border border-blue-500/20 rounded-full"
+              />
+              <motion.div
+                animate={{
+                  scale: [1, 1.2, 1],
+                  opacity: [0.4, 0.5, 0.4],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.5,
+                }}
+                className="absolute size-32 border border-blue-500/40 rounded-full"
+              />
+              <motion.div
+                animate={{
+                  boxShadow: [
+                    "0 0 20px rgba(59,130,246,0.3)",
+                    "0 0 40px rgba(59,130,246,0.5)",
+                    "0 0 20px rgba(59,130,246,0.3)",
+                  ],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="size-16 border-2 border-blue-500 rounded-full flex items-center justify-center relative"
+              >
+                <motion.div
+                  animate={{
+                    scale: [0.8, 1.2, 0.8],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                  className="size-12 m-auto bg-blue-500/20 rounded-full "
+                />
+              </motion.div>
+            </div>
             <h3 className="text-lg font-semibold text-white mb-3 text-center">
               Get locked in with adaptive focus modes in core
             </h3>

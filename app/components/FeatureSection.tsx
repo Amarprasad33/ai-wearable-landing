@@ -49,7 +49,7 @@ export default function FeatureSection() {
             transition={{ duration: 0.3, delay: 0.4 }}
             className="bg-[#0f0f11] rounded-2xl p-8 flex flex-col justify-end"
           >
-            <div className="w-full aspect-square mb-9 mx-auto relative flex items-center justify-center overflow-hidden rounded-xl ">
+            <div className="w-full max-w-[290px] aspect-square mb-9 mx-auto relative flex items-center justify-center overflow-hidden rounded-xl ">
               <motion.div
                 animate={{
                   scale: [1, 1.1, 1],

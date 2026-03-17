@@ -11,7 +11,7 @@ import {
 export default function FeatureSection() {
   return (
     <section
-      className="w-full py-24 pb-32 bg-background relative z-10"
+      className="w-full py-24 pb-32 bg-background relative z-10 select-none"
       id="features"
     >
       <div className="max-w-6xl mx-auto px-6">

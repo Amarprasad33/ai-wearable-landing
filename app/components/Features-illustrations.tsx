@@ -85,7 +85,7 @@ export const CoreTracking = (props: SVGProps<SVGSVGElement>) => (
       d="M30.3936 103.464V151.107M51.5684 117.801C49.9612 120.123 51.4721 122.151 52.9868 124.463C54.558 126.863 53.7101 129.991 51.3654 132.064C51.163 132.191 50.9891 132.359 50.8546 132.557C50.7201 132.755 50.6278 132.978 50.5835 133.213C50.5393 133.449 50.544 133.69 50.5974 133.923C50.6508 134.157 50.7518 134.376 50.8939 134.569C52.4896 137.94 51.3526 141.202 48.1703 143.225C47.523 143.655 47.0224 144.272 46.7353 144.994C46.3025 146.408 45.3876 147.626 44.1498 148.435C42.9121 149.244 41.4298 149.594 39.961 149.423C39.616 149.438 39.2783 149.526 38.97 149.682C38.6618 149.837 38.39 150.056 38.1726 150.325C36.3457 152.852 33.9613 153.35 31.3507 151.504C31.0821 151.246 30.7235 151.103 30.3511 151.105C29.9786 151.107 29.6215 151.254 29.3556 151.514C26.8375 153.335 24.358 152.808 22.517 150.304C22.2948 150.037 22.0189 149.82 21.7073 149.666C21.3957 149.512 21.0553 149.426 20.7081 149.413C19.2696 149.602 17.8109 149.269 16.5969 148.474C15.3829 147.679 14.4941 146.476 14.0918 145.082C13.8098 144.346 13.3072 143.716 12.6529 143.278C9.2471 141.156 8.14352 137.795 9.97811 134.204C10.4971 133.189 10.2017 132.792 9.50148 132.179C8.74124 131.595 8.12187 130.848 7.68914 129.993C7.25641 129.138 7.02137 128.196 7.00139 127.238C6.98141 126.28 7.177 125.329 7.57371 124.457C7.97042 123.584 8.5581 122.812 9.29335 122.197C9.64197 121.951 9.88493 121.582 9.97375 121.165C10.0626 120.747 9.99073 120.312 9.77255 119.945C8.31568 116.353 9.38071 113.456 12.6529 111.35C13.3357 110.862 13.8505 110.174 14.1265 109.382C14.536 108.052 15.4029 106.909 16.5738 106.156C17.7448 105.404 19.1441 105.09 20.5244 105.269C20.9431 105.375 21.3856 105.332 21.7758 105.146C22.166 104.961 22.4794 104.646 22.6622 104.255C22.9691 103.698 23.3943 103.216 23.9078 102.842C24.4214 102.468 25.0107 102.211 25.6343 102.09C26.2579 101.969 26.9005 101.986 27.5169 102.14C28.1332 102.294 28.7082 102.581 29.2014 102.981C29.3474 103.135 29.5227 103.257 29.7169 103.341C29.9112 103.425 30.1203 103.469 30.3319 103.47C30.5435 103.472 30.7532 103.43 30.9486 103.349C31.1439 103.268 31.3209 103.148 31.4689 102.997C33.8804 101.265 36.3817 101.853 38.1649 104.269C38.4032 104.552 38.6985 104.782 39.0317 104.944C39.3648 105.105 39.7283 105.195 40.0984 105.206C41.5697 105.057 43.0463 105.435 44.2655 106.272C45.4847 107.109 46.3676 108.351 46.7571 109.778C47.1112 110.536 47.6856 111.17 48.4054 111.597C49.4479 112.244 50.2936 113.164 50.8511 114.257C51.4085 115.351 51.6566 116.575 51.5684 117.799V117.801Z"
       stroke="#343A3F"
       strokeWidth="2.19444"
-      stroke-miterlimit="10"
+      strokeMiterlimit="10"
     />
     <path
       d="M23.5526 118.367C23.5526 118.367 28.5926 113.3 30.3938 120.104C32.1949 113.3 37.2349 118.367 37.2349 118.367M40.8283 114.533C40.8283 114.533 44.2443 108.255 37.2092 108.473M37.2349 134.861C37.2349 134.861 32.1949 139.931 30.3938 133.127C28.5926 139.93 23.5526 134.861 23.5526 134.861M38.5029 126.64C38.5029 126.64 43.5904 121.62 45.3287 128.439"
@@ -223,9 +223,9 @@ export const CoreTracking = (props: SVGProps<SVGSVGElement>) => (
         width="96"
         height="96"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -452,9 +452,9 @@ export const CoreFocusModes = (props: SVGProps<SVGSVGElement>) => (
         width="178"
         height="178"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -493,9 +493,9 @@ export const CoreFocusModes = (props: SVGProps<SVGSVGElement>) => (
         width="301.205"
         height="301.205"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -534,9 +534,9 @@ export const CoreFocusModes = (props: SVGProps<SVGSVGElement>) => (
         width="240.49"
         height="240.49"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -960,8 +960,8 @@ export const CoreRecovery = (props: SVGProps<SVGSVGElement>) => {
           y2="275.923"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D9D9D9" />
-          <stop offset="1" stop-color="#737373" stop-opacity="0" />
+          <stop stopColor="#D9D9D9" />
+          <stop offset="1" stopColor="#737373" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_106_166"
@@ -971,8 +971,8 @@ export const CoreRecovery = (props: SVGProps<SVGSVGElement>) => {
           y2="275.923"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D9D9D9" />
-          <stop offset="1" stop-color="#737373" stop-opacity="0" />
+          <stop stopColor="#D9D9D9" />
+          <stop offset="1" stopColor="#737373" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>
